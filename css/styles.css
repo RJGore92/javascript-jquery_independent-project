@@ -1,0 +1,11 @@
+.float-r {
+  float: right;
+}
+
+#output-header {
+  display: none;
+}
+
+#form-b, #form-c, #form-d, #form-e {
+  display: none;
+}
