@@ -1,11 +1,46 @@
-.float-r {
-  float: right;
+.jumbo-one {
+  height: 450px;
+  background-color: silver;
+  border-radius: 50px;
 }
 
 #output-header {
   display: none;
 }
 
-#form-b, #form-c, #form-d, #form-e {
+#form-a, #form-b, #form-c, #form-d, #form-e, #results-div {
   display: none;
+}
+
+.q-height-override {
+  height: 225px;
+}
+
+.java-background {
+  background-color: purple;
+  border-radius: 10px;
+}
+
+.c-sharp-background {
+  background-color: green;
+  border-radius: 10px;
+}
+
+.php-background {
+  background-color: maroon;
+  border-radius: 10px;
+}
+
+#result-bar {
+  height: 50px;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.adjust-down-right {
+  position: relative;
+  bottom: -50px;
+  float: right;
 }

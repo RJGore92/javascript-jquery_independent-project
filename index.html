@@ -11,14 +11,20 @@
   <body>
     <div class="container">
       <div class="jumbotron jumbo-one">
-        <h5 id="intro-header-a">Welcome to the our coding survey.  We have a few questions for you.</h5>
-        <h5 id="intro-header-b">Answer these five questions as honestly as you can.</h5>
-        <h5 id="intro-header-c">When you have finished, we'll determine what track we feel would be a best fit for you.</h5>
-        <h4 id="output-header">Thank you for answering the questions.  Below is what we feel your best track would be.</h4>
+        <div id="intro-headers">
+          <h5 id="intro-header-a">Welcome to the our coding survey.  We have a few questions for you.</h5>
+          <h5 id="intro-header-b">Answer these five questions as honestly as you can.</h5>
+          <h5 id="intro-header-c">When you have finished, we'll determine what track we feel would be a best fit for you.</h5>
+          <form id="pre-start-button">
+            <button type="submit" class="btn adjust-down-right">Let's get started.</button>
+          </form>
+          <br>
+        </div>
+        <h5 id="output-header">Thank you for answering the questions.  Below is what we feel your best track would be.</h5>
         <div id="form-a">
-          <h5>To start you off, we'd like to ask the following:</h5>
+          <h6>To start you off, we'd like to ask the following:</h6>
           <form id="question-one">
-            <div class="form-group">
+            <div class="form-group q-height-override">
               <label>In what field of programming are you ideally looking to perform?</label>
               <div class="radio">
                 <label>
@@ -39,13 +45,13 @@
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn float-r">Next Question</button>
+            <button type="submit" class="btn adjust-down-right">Next Question</button>
           </form>
         </div>
         <div id="form-b">
-          <h5>Next, let's look at the following:</h5>
+          <h6>Next, let's look at the following:</h6>
           <form id="question-two">
-            <div class="form-group">
+            <div class="form-group q-height-override">
               <label>What company do you ideally hope to work for from the list below?</label>
               <div class="radio">
                 <label>
@@ -66,13 +72,13 @@
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn float-r">Next Question</button>
+            <button type="submit" class="btn adjust-down-right">Next Question</button>
           </form>
         </div>
         <div id="form-c">
-          <h5>Good answer.  Of course, we're approaching the halfway point of the survey now.  Let's look at the following next:</h5>
+          <h6>Good answer.  Of course, we're approaching the halfway point of the survey now.  Let's look at the following next:</h6>
           <form id="question-three">
-            <div class="form-group">
+            <div class="form-group q-height-override">
               <label>Of the three examples below, what do you foresee yourself working on in the long term with any programming language?</label>
               <div class="radio">
                 <label>
@@ -88,67 +94,94 @@
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="code-one" value="php">
+                  <input type="radio" name="code-three" value="php">
                   Web or Mobile development, or working with database systems.
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn float-r">Next Question</button>
+            <button type="submit" class="btn adjust-down-right">Next Question</button>
           </form>
         </div>
         <div id="form-d">
-          <h5>Two more questions left.  You're doing great!  For the next question, let's look at the following:</h5>
+          <h6>Two more questions left.  You're doing great!  For the next question, let's look at the following:</h6>
           <form id="question-four">
-            <div class="form-group">
+            <div class="form-group q-height-override">
               <label>Of the three below, what kind of job experience in the highest focus would you see yourself working under?</label>
               <div class="radio">
                 <label>
-                  <input type="radio" name="code-three" value="c-sharp" checked>
+                  <input type="radio" name="code-four" value="c-sharp" checked>
                   Larger enterprises or government agencies.
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="code-three" value="java">
+                  <input type="radio" name="code-four" value="java">
                   Mobile App development, web development, and custom software companies.
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="code-one" value="php">
+                  <input type="radio" name="code-four" value="php">
                   Database systems, content-focused sites, and SQL programming focus.
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn float-r">Next Question</button>
+            <button type="submit" class="btn adjust-down-right">Next Question</button>
           </form>
         </div>
         <div id="form-e">
-          <h5>Final question!  Answer this next one and we'll tell you which track you best fit in.</h5>
+          <h6>Final question!  Answer this next one and we'll tell you which track you best fit in.</h6>
           <form id="question-five">
-            <div class="form-group">
+            <div class="form-group q-height-override">
               <label>From the three groups of apps below, which do you foresee yourself working most with besides Atom for programming?</label>
               <div class="radio">
                 <label>
-                  <input type="radio" name="code-three" value="php" checked>
+                  <input type="radio" name="code-five" value="php" checked>
                   Notepad++, Sublime Text
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="code-three" value="c-sharp">
+                  <input type="radio" name="code-five" value="c-sharp">
                   Xamarin, Visual Studio
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="code-one" value="java">
+                  <input type="radio" name="code-five" value="java">
                   Greenfoot, Android Studio
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn float-r">What best fits me?</button>
+            <button type="submit" class="btn adjust-down-right">What best fits me?</button>
           </form>
+        </div>
+        <div id="results-div">
+          <h6>The key for your results based on your answer shows as follows.</h6>
+          <div class="row" id="key-row">
+            <div class="col-md-1 java-background">
+
+            </div>
+            <div class="col-md-2">
+              <p class="no-margin">Java</p>
+            </div>
+            <div class="col-md-1 c-sharp-background">
+
+            </div>
+            <div class="col-md-2">
+              <p class="no-margin">C#</p>
+            </div>
+            <div class="col-md-1 php-background">
+
+            </div>
+            <div class="col-md-2">
+              <p class="no-margin">PHP</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row" id="result-bar">
+
+          </div>
         </div>
       </div>
     </div>
