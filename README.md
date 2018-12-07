@@ -13,7 +13,7 @@ The primary purpose of this site is to establish a basic portfolio under the gui
 * Install Git Bash for Git repository cloning of the project
 * Install Atom for review and edit of Code
 * To access repository for project and review code, first clone repository at the appropriate link, then use Git Bash and/or Atom to open the project folder.
-* GitHub Pages link is RJGore92.github.io/unit-final_coding-survey
+* GitHub Pages link is RJGore92.github.io/javascript-jquery_independent-project
 
 ## Known Bugs
 
